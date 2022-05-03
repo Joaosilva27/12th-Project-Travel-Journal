@@ -1,13 +1,95 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #e5e5e5;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.main--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.info--container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main--body {
+  height: 80vh;
+  width: 35vw;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header--body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f55a5a;
+  height: 50px;
+  width: 35vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.header--title {
+  color: white;
+  margin-left: 5px;
+}
+
+.main--inside {
+  margin: 30px;
+}
+
+.location--title {
+  font-size: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.location--h2 {
+  margin-top: 0.2rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.location--image {
+  width: 7rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.location--date {
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.location--description {
+  font-size: 0.6rem;
+}
+
+.location--google {
+  font-size: 0.6rem;
+  color: #918E9B;
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+
+.google--link, .google--link:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
